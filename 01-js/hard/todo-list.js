@@ -11,47 +11,7 @@
 */
 
 class Todo {
-  constructor() {
-    this.todos = [];
-  }
 
-  // Add a new todo to the list
-  add(todo) {
-    this.todos.push(todo);
-  }
-
-  // Remove a todo at the specified index
-  remove(indexOfTodo) {
-    if (indexOfTodo >= 0 && indexOfTodo < this.todos.length) {
-      this.todos.splice(indexOfTodo, 1);
-    }
-  }
-
-  // Update a todo at the given index
-  update(index, updatedTodo) {
-    if (index >= 0 && index < this.todos.length) {
-      this.todos[index] = updatedTodo;
-    }
-  }
-
-  // Get all todos
-  getAll() {
-    return this.todos;
-  }
-
-  // Get a todo at the specified index
-  get(indexOfTodo) {
-    if(indexOfTodo < this.todos.length){
-      return this.todos[indexOfTodo];
-    } else {
-      return null
-    }
-  }
-
-  // Clear all todos
-  clear() {
-    this.todos = [];
-  }
 }
 
 module.exports = Todo;
